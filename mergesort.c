@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 void MergeSort(int *initlist, int *sortedlist, int low, int high)
 {
     int mid = 0;
-    if(low < high) {
+    if(low < high){
         mid = (low + high) / 2;
         MergeSort(initlist, sortedlist, low, mid); // left
         MergeSort(initlist, sortedlist, mid+1, high); // right
@@ -37,22 +37,22 @@ void MergeSort(int *initlist, int *sortedlist, int low, int high)
 
 void Merge(int *initlist, int *sortedlist, int low, int mid, int high)
 {
-    int l1 = low
-    int l2 = mid+1
+    int block1 = low;
+    int block2 = mid+1;
     int i = 0;
 
-    for(i = low; l1 <= mid && l2 <= high; i++) {
-        if(initlist[l1] <= initlist[l2])
-            sortedlist[i] = initlist[l1++];
+    for(i = low; block1 <= mid && block2 <= high; i++) {
+        if(initlist[block1] <= initlist[block2])
+            sortedlist[i] = initlist[block1++];
         else
-            sortedlist[i] = initlist[l2++];
+            sortedlist[i] = initlist[block2++];
     }
     
-    while(l1 <= mid)    
-        sortedlist[i++] = initlist[l1++];
+    while(block1 <= mid)    
+        sortedlist[i++] = initlist[block1++];
 
-    while(l2 <= high)   
-        sortedlist[i++] = initlist[l2++];
+    while(block2 <= high)   
+        sortedlist[i++] = initlist[block2++];
 
     for(i = low; i <= high; i++)
         initlist[i] = sortedlist[i];
