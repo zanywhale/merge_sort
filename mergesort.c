@@ -9,7 +9,7 @@ void MergeSort(int *initlist, int *sortedlist, int low, int high);
 int main(int argc, char *argv[])
 {
     int i = 0;
-    int initList[COUNT] = { 10, 14, 19, 26, 27, 31, 33, 35, 42, 0 };
+    int initList[COUNT] = { 90, 49, 30, 43, 12, 40, 25, 83, 0, 8};
     int resultList[COUNT] = { 0, };
 
     for(i = 0; i < COUNT; i++)
