@@ -23,4 +23,3 @@ sys     0m0.000s
 
 # How did I improve it?
 * I did not give arguments to functions, but I used global variables.
-* 
