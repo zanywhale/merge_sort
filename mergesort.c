@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define COUNT 10
+#define COUNT 100000
 #define ZERO 0
 void Merge(int *initlist, int *sortedlist, int low, int mid, int high);
 void MergeSort(int *initlist, int *sortedlist, int low, int high);
@@ -9,18 +9,17 @@ void MergeSort(int *initlist, int *sortedlist, int low, int high);
 int main(int argc, char *argv[])
 {
     int i = 0;
-    int initList[COUNT] = { 90, 49, 30, 43, 12, 40, 25, 83, 0, 8};
+    int initList[COUNT] = { 0, };
     int resultList[COUNT] = { 0, };
 
     for(i = 0; i < COUNT; i++)
-        printf("%d ", initList[i]);
-    printf("\n");
+        initList[i] = rand()%200000;
 
     MergeSort(initList, resultList, ZERO, COUNT-1);
 
-    for(i = 0; i < COUNT; i++)
-        printf("%d ", resultList[i]);
-    printf("\n");
+    //for(i = 0; i < COUNT; i++)
+    //    printf("%d ", resultList[i]);
+    //printf("\n");
     return 0;
 }
 
