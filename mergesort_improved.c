@@ -47,10 +47,10 @@ void Merge(int low, int mid, int high)
         i++;
     }
     
-    while(block1 <= mid)    
+    while(block1 <= mid)
         sortedList[i++] = initList[block1++];
 
-    while(block2 <= high)   
+    while(block2 <= high)
         sortedList[i++] = initList[block2++];
 
     for(i = low; i <= high; i++)
