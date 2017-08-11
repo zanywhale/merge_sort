@@ -19,6 +19,7 @@ Algorithm : Merge Sort
 Entry     : 10000000
 Time      : 2.540271sec
 === Sort Finished ===
+zanywhale@ubuntu:~/git/merge_sort$
 zanywhale@ubuntu:~/git/merge_sort$ ./MergeSort_Improved 10000000
 === Sort Start ===
 Date      : 2017.8.11
