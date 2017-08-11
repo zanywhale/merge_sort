@@ -1,12 +1,12 @@
 #Makefile
-all: mergesort	mergesort_improved
+all: MergeSort	MergeSort_Improved
 
-mergesort: mergesort.c
-	gcc -o mergesort mergesort.c
+MergeSort: MergeSort.c
+	gcc -o MergeSort MergeSort.c
 
-mergesort_improved: mergesort_improved.c
-	gcc -o mergesort_improved mergesort_improved.c
+MergeSort_Improved: MergeSort_Improved.c
+	gcc -o MergeSort_Improved MergeSort_Improved.c
 
 clean:
 	rm -f *.o
-	rm -f mergesort mergesort_improved
+	rm -f Mergesort MergeSort_Improved
